@@ -1,0 +1,285 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&display=swap');
+
+:root{
+  --red: #DD0C39;
+  --blue: #003594;
+  --primary-color: 111, 76, 255;
+}
+
+
+.navbar{
+  background-color: rgba(255,255,255,0.5);
+}
+.navbar-toggler{
+  background: url("data:image/svg+xml;charset=utf8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3cpath stroke='rgba(221, 12, 57, 1)' stroke-width='3' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3e%3c/svg%3e") no-repeat center / contain !important;
+ 
+}
+.hero-section {
+  background: url('./default-cover_0.jpg') center/cover no-repeat; /* Replace 'bank-hero-image.jpg' with your image */
+  color: #fff;
+  text-align: center;
+  padding: 304px 0;
+  opacity: 0.9;
+  background-color: black;
+}
+
+.btn-glow:hover {
+  box-shadow: rgba(var(--primary-color), 0.5) 0px 0px 20px 0px;
+}
+
+.btn-gradient {
+  background-image: linear-gradient(270deg, #003594 0%, #cf1940 100%);
+  border: 0;
+  color: white;
+  padding: 8px;
+}
+
+
+
+.navbar .container-fluid{
+  padding-top: 10px;
+  padding-bottom: 2px;
+}
+
+
+.navbar-brand{
+  font-family: 'Rubik';
+  font-size: 1.25 rem;
+  font-weight: 700;
+}
+
+.navbar-brand > span {
+  color: #DD0C39;
+}
+.navbar-brand > img {
+  height: 32px;
+  width: 32px;
+  margin-bottom: 6px;
+}
+
+.navbar-nav > li {
+  padding-left: 24px;
+  padding-right: 24px;
+  font-family: "Playfair+Display";
+  font-weight: 500;
+}
+
+.navbar-nav > li > a:hover{
+  color: var(--blue);
+  transition: 0.3s ease-in;
+}
+
+.navbar-nav > li > a{
+  color: var(--red);
+}
+
+.navbar-nav > li > a > button {
+  border: 2px solid var(--blue);
+  background-color: transparent;
+  padding: 4px 16px 4px 16px;
+  color: var(--blue);
+}
+.navbar-nav > li > a > button:hover {
+  background-color: var(--blue);
+  padding: 4px 16px 4px 16px;
+  color: white;
+  transition: 0.3s ease-in-out;
+}
+
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu .dropdown-item {
+  color: var(--blue);
+}
+
+.nepal {
+  
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 96px;
+  line-height: 85px;
+  letter-spacing: 0.02em;
+  background-color: #f3ec78;
+  background: linear-gradient(270deg, #003594 0%, #cf1940 100%);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;       
+}
+
+.nepal1 {
+  
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  background-color: #f3ec78;
+  background: linear-gradient(270deg, #003594 0%, #cf1940 100%);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+          
+        
+}
+
+
+
+
+
+
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 16px;
+  text-align: center;
+  padding-top: 10px;
+  background: linear-gradient(270deg, #003594 0%, #CF1940 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  border-top: 2px solid ;
+  border-image: linear-gradient(270deg, #003594 0%, #cf1940 100%) 2;
+  background:linear-gradient(#ffffff,#F3F8FF) ;
+} 
+
+
+.footer > p{
+  margin-bottom: 12px;
+  overflow: hidden;
+  background: linear-gradient(270deg, #003594 0%, #CF1940 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+
+
+#servicesHead{
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 85px;
+  letter-spacing: 0.02em;
+  background-color: #f3ec78;
+  background: linear-gradient(270deg, #003594 0%, #cf1940 100%);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  margin-top: 32px;      
+}
+
+
+#tableHead{
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 85px;
+  letter-spacing: 0.02em;
+  background-color: #f3ec78;
+  background: linear-gradient(270deg, #003594 0%, #cf1940 100%);
+  background-size: 100%;
+  background-clip: text;
+  -webkit-text-fill-color: transparent; 
+  margin-top: 16px; 
+  text-align: center;
+}
+
+
+
+.card-header{
+  font-family: "Playfair Display";
+  font-weight: 600;
+  background: linear-gradient(270deg, #003594 0%, #CF1940 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+#border{
+  border: 2px solid transparent;
+  border-image: linear-gradient(270deg, #003594 0%, #CF1940 100%) 1;
+  font-family: 'Playfair Display';
+  font-style: normal;
+}
+
+
+
+#btn2{
+  font-family: "Playfair Display";
+  font-weight: 400;
+  font-size: 13px;
+  background: linear-gradient(270deg, #003594 0%, #CF1940 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  padding: 8px 20px 8px 20px;
+  border: 2px solid ;
+  border-image: linear-gradient(270deg, #003594 0%, #cf1940 100%) 2;
+}
+
+
+#contact{
+  position:absolute;
+  top:2400px;
+  width: 100%;
+}
+
+#topic{
+  background: linear-gradient(270deg, #003594 0%, #CF1940 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: "Playfair Display";
+  font-weight: 700;
+}
+
+.form-label{
+  background: linear-gradient(270deg, #003594 0%, #CF1940 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: "Playfair Display";
+}
+
+#sign{
+  background: linear-gradient(270deg, #003594 0%, #CF1940 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  font-family: "Playfair Display";
+}
+
+#sign > a{
+  font-weight: bold;
+}
+i{
+  background: linear-gradient(270deg, #003594 0%, #CF1940 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+.navicon{
+  background: linear-gradient(270deg, #003594 0%, #CF1940 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
