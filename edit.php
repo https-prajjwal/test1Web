@@ -202,7 +202,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                   <div class="card" id="border">
                     <div class="card-header text-center " style = "font-size: 26px;">Welcome to Bank of Nepal</div>
                    <div class="card-body justify-content-center align-items-center text-center">
-                    <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>?id=<?php echo $_GET['id'];?>">
+                   <form method="post" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]);?>?id=<?php echo $_GET['id'];?>">
                     <div class="form-label" style="margin-bottom: 16px;"><?php echo $message;?></div>
                       <label for="name" class="form-label">Name:  <span class="error">* <?php echo $nameErr;?></span></label>
                       <div class="mb-4 input-group">
@@ -221,7 +221,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                       <span class="input-group-text">
                         <i class="bi bi-key-fill"></i>
                       </span>
-                      <input type="text" name = "password" class="form-control" id="password" placeholder="Enter Password" value="<?php echo $password;?>">
+                      <input type="password" name = "password" class="form-control" id="password" placeholder="Enter Password" value="<?php echo $password;?>">
                       <span class="input-group-text">
                         <span class="tt" data-bs-placement="bottom" title="Enter Your Password">
                         <i class="bi bi-question-circle"></i>
@@ -235,7 +235,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                       <span class="input-group-text">
                         <i class="bi bi-key-fill"></i>
                       </span>
-                      <input type="text" name = "cpassword" class="form-control" id="cpassword" placeholder="Confirm Password" value="<?php echo $cpassword;?>">
+                      <input type="password" name = "cpassword" class="form-control" id="cpassword" placeholder="Confirm Password" value="<?php echo $cpassword;?>">
                       <span class="input-group-text">
                         <span class="tt" data-bs-placement="bottom" title="Enter Your Password">
                         <i class="bi bi-question-circle"></i>
@@ -264,7 +264,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
                       <textarea  name="address" rows="4" cols="50"><?php echo $address;?><?php echo $address;?></textarea>
                     </div>
                     <div class=" mt-4 text-center">
-                      <input type = "submit" class="btn-gradient btn-glow" style="border-radius: 8px; padding: 8px 20px 8px 20px;  font-size: 13px;" value="Update" name='submit'>
+                      <input type = "submit" class="btn-gradient btn-glow" style="border-radius: 8px; padding: 8px 20px 8px 20px;  font-size: 13px;" value="Update Info" name='submit'>
                       
                     </div>
                     </form>
