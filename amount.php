@@ -66,7 +66,7 @@ if ($conn->connect_error) {
     die("Connection failed: " . $conn->connect_error);
 }
 
-// Fetch the balance from the database
+
 $sql = "SELECT balance FROM account ORDER BY id1 DESC LIMIT 1";
 $result = $conn->query($sql);
 
@@ -74,11 +74,11 @@ if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
     $balance = $row['balance'];
 } else {
-    $balance = 0; // Set a default balance if no record is found
+    $balance = 0; 
 }
 
 if ($_SERVER["REQUEST_METHOD"] == "POST") {
-    // ... (your existing validation code)
+    
 
     if (isset($_POST['withdraw'])) {
         $amount = $_POST['amount'];
@@ -86,7 +86,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql = "INSERT INTO account (withdraw, balance) VALUES ('$amount', '$balance')";
 
         if (mysqli_query($conn, $sql)) {
-            // Transaction successful, you can add further processing or redirection if needed
+          
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }
@@ -98,7 +98,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
         $sql = "INSERT INTO account (deposit, balance) VALUES ('$amount', '$balance')";
 
         if (mysqli_query($conn, $sql)) {
-            // Transaction successful, you can add further processing or redirection if needed
+            
         } else {
             echo "Error: " . $sql . "<br>" . mysqli_error($conn);
         }
@@ -119,11 +119,6 @@ if (isset($_POST['logout'])) {
 
   // Destroy the session
   session_destroy();
-
-  // Delete the session cookie if it exists
-  if (isset($_COOKIE[session_name()])) {
-      setcookie(session_name(), '', time()-42000, '/');
-  }
 
   // Redirect to the login page
   header("Location: login.php");
@@ -174,7 +169,7 @@ if (isset($_POST['logout'])) {
         </nav>
 
 
-        <!--services-->
+
         <!--services-->
 <div class="container-xxxl " style=" background: linear-gradient(#ffffff,#F3F8FF); overflow: hidden; padding-top: 128px; padding-bottom: 100px;">
 
